@@ -4,8 +4,11 @@
 
 body{
   font-family:'Roboto', sans-serif;
+  box-sizing: border-box;
   width: 411px;
   height: 963px;
+
+
 }
 
 .container{
@@ -53,6 +56,7 @@ h1{
 .bus-list{
   height: 590px;
   overflow-y: scroll;
+
 }
 
 h2{
@@ -104,6 +108,8 @@ h2{
 
 .destination{
   display: inline-block;
+  /* width: 161px; */
+  padding-left: 16px;
   font-weight: lighter;
   font-size: 16px;
 
@@ -112,8 +118,9 @@ h2{
 .alert{
   display: inline-block;
   position: absolute;
-  left: 195px;
+  left: 210px;
   padding: 24px;
+  z-index: -1;
 
 
 }
@@ -128,8 +135,9 @@ h2{
   font-size: 10px;
   text-transform: uppercase;
   position: absolute;
-  left: 195px;
+  left: 210px;
   padding: 28px;
+  z-index: -1;
 }
 
 .time{
