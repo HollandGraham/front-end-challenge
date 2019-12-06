@@ -4,24 +4,24 @@
 
 body{
   font-family:'Roboto', sans-serif;
-  box-sizing: border-box;
   width: 411px;
-  height: 963px;
-
-
+  height: 731px;
 }
 
 .container{
   margin: 0 auto;
-    width: 411px;
-    height: 98px;
-
+  width: 411px;
+  height: 98px;
 }
 
 .statusbar{
   position: fixed;
+  z-index: 1;
 }
 
+img{
+  width: 411px;
+}
 
 nav{
   position: fixed;
@@ -32,8 +32,7 @@ nav{
   width: 411px;
   margin: 0 auto;
   box-shadow: 0px 5px 10px grey;
-  /* padding: 10px 0 15px 15px; */
-
+  z-index: 1;
 }
 
 .fa-arrow-left{
@@ -56,21 +55,16 @@ h1{
 .bus-list{
   height: 590px;
   overflow-y: scroll;
-
-}
-
-h2{
-
 }
 
 .row{
-  /* clear: both; */
+  clear: both;
   height: 64px;
   border-bottom: 1px solid #E0E0E0;
 }
 
 .row:hover {
-  background-color: #E0E0E0;
+  background-color: #F3F4F8;
 }
 
 .number{
@@ -84,14 +78,12 @@ h2{
   font-size: 18px;
   margin-left: 20px;
   margin-top: 8px;
-  /* margin-bottom: 13px; */
   padding-top: 13px;
   padding-bottom: 13px;
-
 }
 
 .inactive{
-  background-color: #dadada;
+  background-color: #CECED7;
 }
 
 .eastbound{
@@ -108,11 +100,9 @@ h2{
 
 .destination{
   display: inline-block;
-  /* width: 161px; */
   padding-left: 16px;
-  font-weight: lighter;
+  font-weight: 300;
   font-size: 16px;
-
 }
 
 .alert{
@@ -120,9 +110,6 @@ h2{
   position: absolute;
   left: 210px;
   padding: 24px;
-  z-index: -1;
-
-
 }
 
 .fa-exclamation-triangle{
@@ -137,7 +124,6 @@ h2{
   position: absolute;
   left: 210px;
   padding: 28px;
-  z-index: -1;
 }
 
 .time{
@@ -153,4 +139,12 @@ h2{
   font-weight: 400;
   font-size: 12px;
   text-align: right;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 54.8px;
+  overflow-y: hidden;
 }
