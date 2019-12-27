@@ -3,6 +3,7 @@
 }
 
 body{
+  margin: auto;
   font-family:'Roboto', sans-serif;
   width: 411px;
   height: 731px;
@@ -135,7 +136,7 @@ h1{
 }
 
 footer {
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   left: 0;
   overflow-y: hidden;
